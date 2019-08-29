@@ -1,4 +1,14 @@
 export default {
+  "people": {
+    "items":{
+      "role": {
+        "ui:widget": "checkboxes",
+        "ui:options": {
+          "inline": true
+        }
+      }
+    }
+  },
   "usage": {
     "ui:widget": "radio",
     "ui:options": {

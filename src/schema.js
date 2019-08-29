@@ -1,52 +1,5 @@
 export default {
   "definitions": {
-    "party": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "title": "Name"
-        },
-        "email": {
-          "type": "string",
-          "title": "Email"
-        },
-        "orcid": {
-          "type": "string",
-          "title": "ORCID"
-        },
-        "role": {
-          "type": "array",
-          "title": "Role(s)",
-          "items": {
-            "type": "string",
-            "enum": [
-              "creator",
-              "contact",
-              "principal_investigator",
-              "co_principal_investigator",
-              "collaborating_principal_investigators",
-              "metadata_provider",
-              "custodian/stewards",
-              "publisher",
-              "user"
-            ],
-            "enumNames": [
-              "Creator",
-              "Contact",
-              "Principal Investigator",
-              "Co-Principal Investigator",
-              "Collaborating Principal Investigator",
-              "Metadata Provider",
-              "Custodian/Steward",
-              "Publisher",
-              "Contributor"
-            ],
-            "uniqueItems": true
-          }
-        }
-      }
-    },
     "geographic_coverage": {
       "title": "Geographic Coverage",
       "type": "object",
@@ -287,7 +240,40 @@ export default {
       "type": "array",
       "title": "People",
       "items": {
-        "$ref": "#/definitions/party"
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "email": {
+            "type": "string",
+            "title": "Email"
+          },
+          "orcid": {
+            "type": "string",
+            "title": "ORCID"
+          },
+          "role": {
+            "type": "array",
+            "title": "Role(s)",
+            "items": {
+              "type": "string",
+              "enum": [
+                "creator",
+                "contact",
+                "principal_investigator",
+                "co_principal_investigator",
+                "collaborating_principal_investigators",
+                "metadata_provider",
+                "custodian/stewards",
+                "publisher",
+                "user"
+              ],
+            },
+            "uniqueItems": true
+          }
+        }
       }
     },
     "geographic_coverage": {
