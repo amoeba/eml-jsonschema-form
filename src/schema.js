@@ -41,7 +41,8 @@ export default {
               "Custodian/Steward",
               "Publisher",
               "Contributor"
-            ]
+            ],
+            "uniqueItems": true
           }
         }
       }
@@ -60,7 +61,8 @@ export default {
           "enum": [
             "Point",
             "Bounding Box"
-          ]
+          ],
+          "uniqueItems": true
         }
       },
       "dependencies": {
@@ -134,7 +136,8 @@ export default {
           "enum": [
             "Single Date",
             "Date Range"
-          ]
+          ],
+          "uniqueItems": true
         }
       },
       "dependencies": {
@@ -181,6 +184,17 @@ export default {
           "type": "string",
           "title": "Rank",
           "enum": [
+            "domain",
+            "kingdom",
+            "phylum",
+            "class",
+            "order",
+            "family",
+            "genus",
+            "species",
+            "other"
+          ],
+          "enumNames": [
             "Domain",
             "Kingdom",
             "Phylum",
@@ -190,7 +204,8 @@ export default {
             "Genus",
             "Species",
             "Other"
-          ]
+          ],
+          "uniqueItems": true
         },
         "value": {
           "type": "string",
@@ -204,7 +219,7 @@ export default {
               "properties": {
                 "rank": {
                   "enum": [
-                    "Other"
+                    "other"
                   ]
                 },
                 "other": {
