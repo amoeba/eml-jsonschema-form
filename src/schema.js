@@ -270,6 +270,17 @@ export default {
                 "publisher",
                 "user"
               ],
+              "enumNames": [
+                "Creator",
+                "Contact",
+                "Principal Investigator",
+                "Co-Principal Investigator",
+                "Collaborating Principal Investigator",
+                "Metadata Provider",
+                "Custodian/Steward",
+                "Publisher",
+                "Contributor"
+              ]
             },
             "uniqueItems": true
           }
