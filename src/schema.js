@@ -188,7 +188,7 @@ export default {
   },
   "title": "Dataset",
   "type": "object",
-  "required": ["title"],
+  "required": ["title", "people"],
   "properties": {
     "title": {
       "type": "string",
