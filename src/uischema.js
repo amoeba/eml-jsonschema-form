@@ -5,7 +5,8 @@ export default {
         "ui:widget": "checkboxes",
         "ui:options": {
           "inline": true
-        }
+        },
+        "classNames": "roles"
       }
     }
   },
