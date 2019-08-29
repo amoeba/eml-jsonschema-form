@@ -301,7 +301,7 @@ export default {
         "classifications": {
           "type": "array",
           "title": "Classifications",
-          "items": { 
+          "items": {
             "$ref": "#/definitions/taxonomic_classification"
           }
         }
@@ -314,7 +314,7 @@ export default {
         "steps": {
           "type": "array",
           "title": "Steps",
-          "items": { 
+          "items": {
             "type": "string"
           }
         },

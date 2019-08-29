@@ -1,6 +1,6 @@
 export default {
   "people": {
-    "items":{
+    "items": {
       "role": {
         "ui:widget": "checkboxes",
         "ui:options": {
@@ -35,7 +35,7 @@ export default {
     "items": {
       "description": {
         "ui:widget": "textarea"
-      }  
+      }
     }
   },
   "taxonomic_coverage": {
